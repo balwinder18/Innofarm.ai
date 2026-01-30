@@ -1,0 +1,21 @@
+:root {
+  /* Brand Colors */
+  --primary-color: #1a1a1a;
+  --accent-color: #d4af37; /* Example: Gold for a premium feel */
+  --bg-color: #ffffff;
+  --text-main: #333333;
+  --text-muted: #666666;
+
+  /* Spacing System (8px grid) */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 48px;
+
+  /* Typography */
+  --font-main: 'Inter', sans-serif;
+  --h1-size: 3.5rem;
+  --body-size: 1rem;
+  --line-height-base: 1.5;
+}

@@ -1,0 +1,180 @@
+.navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.container {
+  width: 92%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLinks {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+/* The Active/Orange Pill */
+.platformPill {
+  background-color: #ef6820; /* Exact Brand Orange */
+  color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.link {
+  font-size: 14px;
+  color: #333333;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Icon adjustment to ensure vertical alignment */
+.link svg, .platformPill svg {
+  display: block;
+}
+
+/* Right Side Buttons */
+.btnGroup {
+  display: flex;
+  gap: 12px;
+}
+
+.btnContact, .btnDemo {
+  padding: 10px 24px;
+  border: 1px solid #ef6820;
+  color: #ef6820;
+  border-radius: 50px;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btnContact:hover, .btnDemo:hover {
+  background-color: rgba(239, 104, 32, 0.05);
+}
+
+
+
+
+/* ... keep your existing desktop CSS above ... */
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.mobileActions {
+  display: none; /* Hidden on desktop */
+}
+
+@media (max-width: 1024px) {
+  .hamburger {
+    display: block;
+    z-index: 1001;
+  }
+
+  .navLinks {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Hidden by default */
+    width: 80%;
+    height: 100vh;
+    background: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    transition: 0.3s ease-in-out;
+    box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+
+  .navActive {
+    right: 0; /* Slide in */
+  }
+
+  .btnGroup {
+    display: none; /* Hide original buttons on small screens */
+  }
+
+  .mobileActions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  .platformPill {
+    width: fit-content;
+  }
+}
+
+
+
+.activeLink {
+  color: #ef6820 !important; /* Brand Orange for active state */
+  font-weight: 700 !important;
+}
+
+/* Ensure the Chevron also colors correctly on active link */
+.activeLink svg {
+  color: #ef6820;
+}
+
+/* Add a hover effect for better UX */
+.link:hover {
+  color: #ef6820;
+  cursor: pointer;
+}
+
+
+
+/* ... existing CSS ... */
+
+.platformPill {
+  background-color: #ef6820; /* Brand Orange */
+  color: #ffffff !important; /* Force white text */
+  padding: 8px 18px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline for Link component */
+}
+
+/* Ensure icons inside the pill are white */
+.platformPill svg {
+  color: #ffffff;
+}
+
+/* Add transition for smooth swapping */
+.link, .platformPill {
+  transition: all 0.3s ease;
+}

@@ -1,0 +1,257 @@
+.wrapper {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 40px;
+}
+
+.newsCard {
+  border: 2px solid #ef6820; /* Brand Orange */
+  border-radius: 12px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.imageBox {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.newsBody { padding: 20px; }
+.newsBody h3 { font-size: 18px; color: #00874e; margin: 10px 0; }
+
+.suiteRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.header {
+  padding: 20px;
+  border-radius: 8px 8px 0 0;
+  color: #fff;
+}
+
+.bgOrange { background-color: #ef6820; }
+.bgDarkOrange { background-color: #d15a1a; }
+
+.item {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.benefitRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.benefitBox {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1.5px solid #ef6820;
+}
+
+.orangeText { color: #ef6820; }
+
+@media (max-width: 1024px) {
+  .grid { grid-template-columns: 1fr; }
+}
+
+
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.newsCard {
+  border: 4px solid #ef6820; /* Thicker orange border as seen in design */
+  border-radius: 12px;
+  background: #e8f3ef; /* Mint background for the whole card */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.imageBox {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  /* Design shows a small gap/padding around the image sometimes */
+  padding: 8px; 
+}
+
+.imageBox img {
+  border-radius: 8px; /* Rounded corners on the image itself */
+}
+
+.newsBody {
+  padding: 15px 20px 25px 20px;
+}
+
+.newsHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.newsTitle {
+  font-size: 15px;
+  line-height: 1.3;
+  color: #000;
+  font-weight: 800;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.highlight {
+  color: #00874e; /* The green brand color */
+}
+
+.summary {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.readMore {
+  font-size: 13px;
+  color: #00874e;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.arrow {
+  font-weight: bold;
+}
+
+/* Newsletter Styles */
+.newsletterTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #00874e;
+  margin-bottom: 15px;
+}
+
+.newsInputWrapper {
+  display: flex;
+  background: #e8f3ef; /* Match card background */
+  border-radius: 8px;
+  padding: 4px;
+  align-items: center;
+}
+
+.emailInput {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #666;
+  outline: none;
+}
+
+.signUpBtn {
+  background: #ef6820;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.signUpBtn:hover {
+  opacity: 0.9;
+}
+
+
+
+.benefitRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.benefitBox {
+  background-color: #ef6820; /* Solid Brand Orange */
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.benefitHeader {
+  padding: 15px 25px 5px 25px;
+}
+
+.benefitHeader h4 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.benefitList {
+  padding: 10px 25px 25px 25px;
+  display: grid;
+  /* Split bullets into two columns to match design */
+  grid-template-columns: 1fr 1fr; 
+  gap: 12px 30px;
+  list-style: none;
+  margin: 0;
+}
+
+.benefitList li {
+  color: #ffffff; /* White text on orange background */
+  font-size: 11px;
+  font-weight: 500;
+  position: relative;
+  padding-left: 18px;
+  line-height: 1.4;
+}
+
+/* Accuracy Fix: Custom light-grey/white bullets */
+.benefitList li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .benefitRow {
+    grid-template-columns: 1fr;
+  }
+  .benefitList {
+    grid-template-columns: 1fr; /* Stack bullets on mobile */
+  }
+}

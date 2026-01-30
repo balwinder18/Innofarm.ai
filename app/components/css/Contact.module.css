@@ -1,0 +1,156 @@
+.wrapper {
+  background-color: #00874e; 
+  padding: 50px 20px; /* Reduced vertical padding */
+  color: #ffffff;
+  width: 100%;
+}
+
+.container {
+  max-width: 1100px; /* Slightly narrower for a tighter feel */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr; 
+  gap: 60px; /* Reduced gap */
+  align-items: start;
+}
+
+/* Form Section Refinements */
+.title { 
+  font-size: 28px; /* Scaled down from 36px */
+  font-weight: 700; 
+  margin-bottom: 8px; 
+}
+
+.description { 
+  font-size: 13px; /* Scaled down from 15px */
+  margin-bottom: 25px; 
+  opacity: 0.9; 
+  line-height: 1.5;
+  max-width: 450px;
+}
+
+.inputGroup { 
+  margin-bottom: 16px; /* Reduced from 24px */
+  display: flex; 
+  flex-direction: column; 
+  gap: 6px; 
+}
+
+.inputGroup label { 
+  font-weight: 600; 
+  font-size: 14px; /* Scaled down from 16px */
+}
+
+.form input, .form textarea {
+  background-color: #ffffff;
+  padding: 10px 18px; /* Tighter padding */
+  border-radius: 50px; 
+  border: none;
+  font-size: 12px; /* Smaller font for inputs */
+  width: 100%;
+  color: #333;
+  outline: none;
+}
+
+.form textarea { 
+  border-radius: 15px; 
+  min-height: 70px; /* Shorter message box */
+  padding-top: 12px;
+}
+
+.sendBtn {
+  background-color: #ef6820; 
+  color: white;
+  border: none;
+  padding: 10px 45px; /* Compact button */
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 14px; /* Smaller button text */
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+/* Info Section (Right Side) */
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.socialCard {
+  background: white;
+  padding: 25px 30px; /* Tighter padding */
+  border-radius: 12px;
+  align-self: flex-start; 
+  width: 100%;
+}
+
+.cardTitle { 
+  font-size: 20px; /* Scaled down from 26px */
+  font-weight: 700; 
+  color: #ef6820; 
+  margin-bottom: 15px; 
+}
+
+.socialGrid { 
+  display: flex; 
+  gap: 12px; 
+  margin-bottom: 25px; 
+}
+
+.iconBox {
+  background: #00874e;
+  width: 36px; /* Scaled down from 45px */
+  height: 36px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emailText { 
+  color: #000; 
+  font-weight: 700; 
+  margin-bottom: 4px; 
+  font-size: 15px; /* Scaled down from 18px */
+}
+
+/* Newsletter Section */
+.newsletterTitle { 
+  font-size: 15px; 
+  font-weight: 700; 
+  margin-bottom: 10px; 
+}
+
+.newsletterInput { 
+  display: flex; 
+  background: white; 
+  border-radius: 6px; 
+  overflow: hidden; 
+  padding: 4px;
+  height: 38px; /* Fixed height for clean look */
+}
+
+.newsletterInput input { 
+  border: none; 
+  padding: 0 12px; 
+  flex: 1; 
+  font-size: 11px; 
+  color: #666; 
+}
+
+.signUpBtn {
+  background-color: #ef6820;
+  color: white;
+  border: none;
+  padding: 0 18px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .container { grid-template-columns: 1fr; gap: 40px; }
+  .wrapper { padding: 40px 20px; }
+}

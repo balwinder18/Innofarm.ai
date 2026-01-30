@@ -1,0 +1,326 @@
+.showcase {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+}
+
+.topHeader {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.underlinedText {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000;
+  display: inline;
+  /* Matching the blue underline from Figma */
+  border-bottom: 2px solid #0056b3; 
+  padding-bottom: 2px;
+}
+
+.contentGrid {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.videoWrapper {
+  flex: 1;
+}
+
+.videoPlaceholder {
+  aspect-ratio: 16 / 9;
+  background-color: #e0e0e0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #666;
+}
+
+.textSide {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.mainTitle {
+  font-size: 42px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.2;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .contentGrid {
+    flex-direction: column;
+  }
+  
+  .mainTitle {
+    font-size: 32px;
+  }
+}
+
+
+
+
+/* ... keep your existing desktop styles ... */
+
+.showcase {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+}
+
+.topHeader {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+
+
+.contentGrid {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .showcase {
+    padding: 60px 0; /* Reduced vertical padding */
+  }
+
+  .container {
+    width: 92%; /* Give text a bit more room */
+  }
+
+  .topHeader {
+    margin-bottom: 40px;
+    text-align: left; /* Optional: Align left on mobile for better readability */
+  }
+
+  
+
+  .contentGrid {
+    flex-direction: column; /* Stack video on top of text */
+    gap: 32px; /* Reduce gap between video and text */
+    align-items: flex-start;
+  }
+
+  .videoWrapper {
+    width: 100%; /* Ensure video takes full width */
+  }
+
+  .textSide {
+    width: 100%;
+    gap: 16px;
+  }
+
+  .mainTitle {
+    font-size: 28px; /* Scale down title */
+    line-height: 1.3;
+  }
+
+  .description {
+    font-size: 15px;
+    gap: 12px;
+  }
+}
+
+/* Tablet sizing (prevent awkward mid-range stretching) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contentGrid {
+    gap: 30px;
+  }
+  
+  .mainTitle {
+    font-size: 34px;
+  }
+}
+
+
+
+
+
+
+/* intelligent soluiton section  */
+.wrapper {
+  padding: 20px 20px;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.header h2 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #000;
+}
+
+.subHeader {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  margin-top: 10px;
+}
+
+.architecture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0; /* Removing gap to let connectors handle spacing */
+}
+
+.card {
+  flex: 1;
+  border: 1.5px solid #d1e2da;
+  border-radius: 12px;
+  padding: 40px;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Symmetrical Alignment */
+.leftCard {
+  text-align: right;
+  align-items: flex-end;
+}
+
+.rightCard {
+  text-align: left;
+  align-items: flex-start;
+}
+
+.enterpriseTitle { color: #ef6820; font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+.farmTitle { color: #007a4d; font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+
+.tagline {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.list li {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 12px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Custom bullet logic for both sides */
+.leftCard .list li { justify-content: flex-end; }
+.rightCard .list li { justify-content: flex-start; }
+
+.leftCard .list li::after { content: "•"; color: #333; margin-left: 8px; }
+.rightCard .list li::before { content: "•"; color: #333; margin-right: 8px; }
+
+.footerNote {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #000;
+  font-weight: 600;
+  margin-top: auto;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 250px;
+  justify-content: center;
+}
+
+.greyCircle {
+  width: 180px;
+  height: 180px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+/* Stepped lines refined to look like Figma */
+.stepConnectorLeft, .stepConnectorRight {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 30px;
+  border-bottom: 1.5px solid #d1d1d1;
+}
+
+.stepConnectorLeft {
+  left: 0;
+  border-right: 1.5px solid #d1d1d1;
+  transform: translateY(-100%);
+}
+
+.stepConnectorRight {
+  right: 0;
+  border-left: 1.5px solid #d1d1d1;
+  transform: translateY(-100%);
+}
+
+@media (max-width: 1100px) {
+  .architecture { flex-direction: column; gap: 40px; }
+  .leftCard, .rightCard { text-align: left; align-items: flex-start; }
+  .leftCard .list li { justify-content: flex-start; flex-direction: row-reverse; }
+  .leftCard .list li::after { display: none; }
+  .leftCard .list li::before { content: "•"; margin-right: 8px; }
+  .logoWrapper { order: -1; }
+  .stepConnectorLeft, .stepConnectorRight { display: none; }
+}
+
+
+
+
+

@@ -1,0 +1,161 @@
+.hero {
+  width: 100%;
+  min-height: 600px;
+  background-color: #84b2a0; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 20px;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers items horizontally */
+  justify-content: center;
+}
+
+/* Pagination - The fix for centering */
+.pagination {
+  display: flex;
+  gap: 12px;
+  margin-top: 50px;
+  justify-content: center; /* This ensures dots are centered */
+  width: 100%;
+}
+
+.fadeAnim {
+  animation: fadeIn 0.8s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.title {
+  color: #ffffff;
+  font-size: 48px; /* Matching the bold Figma presence */
+  font-weight: 700;
+  line-height: 1.1;
+  max-width: 850px;
+}
+
+.subtitle {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.95;
+}
+
+.cta {
+  background-color: #ef6820; /* Fixed to match Navbar orange */
+  color: white;
+  padding: 16px 36px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cta:hover {
+  background-color: #d4561a;
+  transform: translateY(-2px);
+}
+
+
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.activeDot {
+  opacity: 1;
+  background-color: #004d31;
+  transform: scale(1.2);
+}
+
+
+
+
+/* ... keep your existing desktop styles ... */
+
+.hero {
+  width: 100%;
+  min-height: 600px;
+  background-color: #84b2a0; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 24px; /* Slightly more side padding for mobile */
+  overflow: hidden;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  max-width: 850px;
+  transition: font-size 0.3s ease;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 500px; /* Adjust height for mobile screens */
+    padding: 60px 20px;
+  }
+
+  .title {
+    font-size: 32px; /* Scaled down for mobile readability */
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    font-size: 16px; /* Slightly smaller for balance */
+    margin-top: -8px; /* Tighten the gap */
+  }
+
+  .cta {
+    padding: 14px 28px; /* Scale button slightly */
+    font-size: 16px;
+    width: 100%; /* Optional: Full width button on small mobile */
+    max-width: 280px;
+  }
+
+  .pagination {
+    margin-top: 40px;
+  }
+}
+
+/* Ultra-small screens */
+@media (max-width: 480px) {
+  .title {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,166 @@
+.footer {
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.archedContainer {
+  background-color: #e8f3ef; 
+  /* INCREASED DEPTH: Doubled the vertical radius for a much deeper 'dome' effect */
+  border-radius: 50% 50% 0 0 / 500px 500px 0 0; 
+  /* REDUCED HEIGHT: Tightened padding to bring the content higher up */
+  padding: 80px 10% 60px 10%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.topSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; /* Reduced gap */
+  margin-bottom: 40px; /* Reduced margin */
+}
+
+.tagline {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  max-width: 800px;
+  line-height: 1.3;
+}
+
+.linksGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  text-align: left;
+}
+
+.colTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  border-bottom: 3px solid #00874e;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding-bottom: 6px;
+}
+
+.colSub {
+  font-size: 11px;
+  color: #666;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.linksList {
+  list-style: none;
+  padding: 0;
+}
+
+.linksList li {
+  font-size: 13px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #333;
+}
+
+.regionLabel {
+  color: #ef6820; 
+  font-weight: 700;
+  font-size: 13px;
+  display: block;
+  margin-top: 10px;
+}
+
+.address p {
+  font-size: 12px;
+  color: #333;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+/* Sub Footer Bar */
+.subFooter {
+  background-color: #00874e;
+  padding: 15px 0; /* Reduced height as requested */
+}
+.subContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 13px;
+}
+
+.socialArea {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.socialGrid { display: flex; gap: 10px; }
+
+.iconBox {
+  background: #ffffff;
+  width: 32px;  /* Fixed size ensures they don't stretch */
+  height: 32px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Keeps the icon inside the box */
+  padding: 6px;    /* Provides a 'frame' so logos don't touch the edges */
+  cursor: pointer;
+}
+
+.iconBox:hover {
+  transform: translateY(-2px);
+}
+
+.miniNewsletter {
+  display: flex;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-left: 15px;
+}
+
+.miniNewsletter input { 
+  border: none; 
+  padding: 8px 12px; 
+  font-size: 11px; 
+  width: 220px; 
+  outline: none;
+  color: #333;
+}
+
+.miniSignUp { 
+  background: #ef6820; 
+  color: #fff; 
+  border: none; 
+  padding: 0 15px; 
+  font-size: 11px; 
+  font-weight: 700; 
+  cursor: pointer;
+}
+
+.socIcon {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain; /* Prevents logo from being cut off */
+}
+
+@media (max-width: 1024px) {
+  .archedContainer { 
+    border-radius: 50% 50% 0 0 / 100px 100px 0 0; 
+    padding: 60px 5%; 
+  }
+  .linksGrid { grid-template-columns: 1fr; gap: 30px; }
+  .subContent { flex-direction: column; gap: 15px; }
+  .miniNewsletter input { width: 100%; }
+}
+

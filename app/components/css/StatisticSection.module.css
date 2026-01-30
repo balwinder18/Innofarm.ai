@@ -1,0 +1,104 @@
+.wrapper {
+  padding: 20px 20px;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.group {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.mainTitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.subLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #000;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  font-weight: 400;
+}
+
+/* The Grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+/* Stat Pill Design */
+.statPill {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: #fff;
+  gap: 15px;
+  height: 60px; /* Precise height as per image */
+}
+
+.greenPill { background-color: #62b08f; }
+.orangePill { background-color: #ef6820; }
+
+.iconBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+}
+
+.statContent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+}
+
+.statNumber {
+  font-size: 24px;
+  font-weight: 800;
+  white-space: nowrap;
+  
+}
+
+.statText {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .mainTitle {
+    font-size: 24px;
+  }
+
+  .statPill {
+    height: auto;
+    padding: 15px;
+  }
+}
