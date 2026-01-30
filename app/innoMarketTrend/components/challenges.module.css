@@ -1,0 +1,77 @@
+.challengesWrapper {
+  padding: 60px 20px 100px 20px;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.challengesHeader {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sectionTitle {
+  font-size: 36px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.sectionSub {
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+}
+
+.challengesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.challengeCard {
+  background-color: #e8f3ef; /* Light Mint background */
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.imageBox {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.challengeImg {
+  object-fit: contain;
+}
+
+.challengeTitle {
+  font-size: 18px;
+  font-weight: 800; /* Extra bold as per design */
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.challengeDesc {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #333;
+  font-weight: 500;
+}
+
+@media (max-width: 992px) {
+  .challengesGrid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}

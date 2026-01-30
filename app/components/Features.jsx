@@ -31,7 +31,7 @@ export default function Features() {
                 playsInline
                 // poster="/images/HeroVideoShutter.jpg" // Optional: Image shown while video loads
               >
-                <source src="/images/Herovideoshutter.mp4" type="video/mp4" />
+                <source src="/videos/Herovideoshutter.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
